@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+    <title>Program Survey Form</title>
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+      <h1 id="title">Program Survey Form</h1>
+      <p id="description">Please fill out this form and share your valuable feedback</p>
+
+  <form id="survey-form">
+    <fieldset>
+      
+      <label id="name-label" for="name">Name <input id="name" type="text" placeholder="enter your name" required/> </label>
+      </fieldset>
+
+      <fieldset>
+      <label id='email-label' for="email">Email <input id="email" type="email" placeholder="enter your email" required /> </label>
+      </fieldset>
+
+      <fieldset>
+      <label id='number-label' for="number">Age <input id="number" type="number" min="10" max="100" placeholder="enter your age" required /> </label>
+     </fieldset> 
+
+     <fieldset>
+    <label for="referrer">What is your favorite area of Program?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select an option)</option>
+            <option value="3">Tutorials</option>
+            <option value="1">News</option>
+            <option value="2">YouTube Channel</option>
+            <option value="3">Forum</option>
+            <option value="3">Mobile App</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        </fieldset>
+
+        <fieldset>Would you recommend this Program to a friend?
+          <br/>
+        <label for="yes"><input id="yes" type="radio" name="recommend" class="inline" value="yes" /> Yes</label>
+        <label for="no"><input id="no" type="radio" name="recommend" class="inline" value="no" /> Not Sure</label>
+        <label for="maybe"><input id="maybe" type="radio" name="recommend" class="inline" value="maybe"/> Maybe</label>
+      </fieldset>
+
+      <fieldset>How will you rate yourself after taking this program?
+        <br/>
+      <label for="rating">
+          <input id="rating" type="checkbox" required name="rating" class="inline" value="alot"/> Learned A Lot </label>
+      <label for="rating">
+          <input id="rating" type="checkbox" required name="rating" class="inline" value="somthing" /> A little learned </label>
+      <label for="rating">
+          <input id="rating" type="checkbox" required name="rating" class="inline" value="nothing" /> Same as before joining this Program </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="comments">Share your Thoughts:
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Any additional comments..."></textarea>
+        </label>
+        
+        </fieldset>
+
+        <button id="submit"> <input type="submit" value="Submit" /> </button>
+
+        
+
+  </form>
+ </body>
+</html> 
